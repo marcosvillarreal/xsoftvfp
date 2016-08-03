@@ -1,0 +1,127 @@
+*	1)Si la empresa es agente de retencion ganancia (RG), sumaremos el neto gravado (sumaNG) del importe afectado. SOLO FACTURAS/N.DEBITO
+*	2)Luego sumamos todos los netogravado de los pagos efectuados en el mes (pagosNG)
+*	3)La base de RG (baseRG) se calcula de la (sumaNG + pagosNG) - el excedente determinado por el concepto del proveedor.
+*	4)Almacenamos en la suma de las RG de los pagos (retePagosRG)
+*	5)Le aplicamos el porcentaje determinado para sacar la RG (reteRG = baseRG* x.xx/100)
+*	6)La retencion final sale de restarle a reteRG la retenciones previas de los pagos retePagosRG [reteRG = reteRG - retePagosRG]
+*	7)el reteRG  debe superar el minimo determinado por el concepto del proveedor.
+
+
+* Calculamos retenciones automaticas si el comprobante es de proveedores.
+IF goapp.empresarete=1 AND CsrComprobante.regisa = 1
+	LOCAL lnSumaAfec,lcidmaopera,ldfecdesde,ldfechasta,lnidctacte,lctipomov 
+	
+	nSumaNG = 0
+	lcidmaopera="0"
+
+	ldfecdesde = this.oDatos.dfechamov
+	ldfecdesde = CTOD('01-'+strzero(MONTH(ldfecdesde),2)+'-'+STR(YEAR(ldfecdesde)))
+	ldfechasta = GOMONTH(ldfecdesde,1)-1
+	lcfecdesde = "'"+DTOS(ldfecdesde)+"'"
+	lcfechasta = "'"+DTOS(ldfechasta)+"'"
+	
+	lnidctacte = this.odatos.nidctacte
+
+	lctipomov = "'PAG','CPR','IMP'"
+	
+	SELECT csrAuxMovAfectado
+	GO TOP 
+	SCAN 
+		SCATTER NAME Oscatter
+		&&El comprobante debe ser original de compras (regish o regisa) y FAC o N.Debito
+		IF Oscatter.afecta#0 AND (Oscatter.compacreedor>0) AND Oscatter.clasecomp$'AB'
+			&&La base es el % de gravado de lo afectado.
+			&&(1)
+			nSumaNG = nSumaNG + ROUND(((Oscatter.afecta*100/Oscatter.importe)/100),4)*Oscatter.gravado
+			lcidmaopera = ALLTRIM(lcidmaopera)+IIF(EMPTY(lcidmaopera)," ",",")+ALLTRIM(STRid(CsrAuxMovAfectado.id))
+		ENDIF 
+	ENDSCAN 
+
+	lcIdCreditos = STRTRAN(this.odatos.idcomprobacreditos,"-",",")
+	lcIdCreditos = STRTRAN(lcIdDeudores," ","")
+		
+	TEXT TO lcCmd TEXTMERGE NOSHOW 
+	SELECT  CsrMaopera.id as idrecibo,CsrAfeCtacte.idmaoperad as idafectado
+	,Csrmaopera.idcomproba as idcomproba, CsrAfeMaope.idcomproba as idafecomproba
+	,isnull((select sum(importe) from tablaimp as CsrImpAfectado
+		where CsrImpAfectado.idmaopera = CsrAfeCtacte.idmaoperad and CsrImpAfectado.tipoconce='NG'),cast(0 as numeric(11,2))) as NetoG
+	,isnull(CsrAfeCtacte.importe,cast(0 as numeric(11,2))) as Afecto
+	,isnull((select sum(importe) from tablaimp as CsrImpAfectado
+		where CsrImpAfectado.idmaopera = CsrAfeCtacte.idmaoperad and NOT CsrImpAfectado.tipoconce in ('ND','NB','NT','ED','EB','ET')),cast(0 as numeric(11,2))) as Total
+	,isnull(case when CsrImpRecibo.tipoconce='RG'then CsrImpRecibo.importe else 0 end,cast(0 as numeric(11,2))) as ReteGan
+	FROM maopera as CsrMaopera
+	left join movctacte as Csrmovctacte on Csrmaopera.id = CsrMovctacte.idmaopera
+	left join ctacte as Csrctacte on CsrMovctacte.idctacte = Csrctacte.id
+	left join afectacte as CsrAfectacte on CsrMaopera.id = CsrAfeCtacte.idmaoperah
+	left join maopera as CsrAfeMaope on CsrAfeCtacte.idmaoperad = CsrAfeMaope.id
+	left join cabecpra as CsrCabecpra on CsrafeCtacte.idmaoperad = CsrCabeCpra.idmaopera and CsrAfeCtacte.iddebe = CsrCabeCpra.id
+	left join tablaimp as CsrImpRecibo on CsrMovctacte.idmaopera = CsrImpRecibo.idmaopera
+	left join comprobante as CsrComprobante on CsrMaopera.idcomproba = CsrComprobante.id
+	left join comprobante as CsrAfeComproba on CsrAfeMaope.idcomproba = CsrAfeComproba.id
+	WHERE CsrMovCtacte.idctacte = <<lnidctacte>>
+	and csrmaopera.clasecomp<>'K' and (csrmovctacte.fecha between <<lcfecdesde>> and <<lcfechasta>>)
+	and Csrmaopera.estado<>'1' and Csrmaopera.origen='PAG' 
+	and (CsrMaopera.idcomproba in (<<lcidDeudores>>) and CsrComprobante.regisa = 1)
+	and (CsrAfeComproba.clase in ('A','B'))
+	ENDTEXT 
+	
+	=SaveSQL(lccmd,'REGCTACTE_'+this.name+'_controlRG')
+	IF !CrearCursorAdapter('CsrRetuvo',lccmd)
+		thisform.Release
+	ENDIF 
+	&&(2) (4)
+	&&Sumamos los neto gravado de las facturas y n.debito ya afectadas en pagos en el mes.
+	&&Sumamos en caso de existir las retenciones efectuadas en los pagos 
+	
+	LOCAL nPagosNG,nRetePagosRG
+	STORE 0 TO nPagosNG,nRetePagosRG
+	
+	SELECT CsrRetuvo
+	GO TOP
+	lcidmaopera = "" 
+	lngravado = 0
+	DO WHILE !EOF() 
+		&&Sumamos una unica vez el total retenciones del recibo
+		IF NOT strid(CsrRetuvo.idrecibo)$lcidmaopera
+			lcidmaopera = lcidmaopera + '-'+strid(CsrRetuvo.idrecibo)
+			nRetePagosRG = nRetePagosRG + CsrRetuvo.reteGan
+		ENDIF 
+		
+		&&Calculamos el % del neto gravado que afecto el recibo al comprobante
+		SCATTER NAME OscRete
+		nPagosNG = nPagosNG + ROUND(((Oscatter.afecto*100/Oscatter.total)/100),4)*Oscatter.NetoG
+	ENDDO 
+	
+	&&(3)
+	&&Sumamos el neto afectado de los comprobantes seleccionados y de los registrados en el mes
+	&&Y lo restamos al excedente. Si no supera el excedente no se retiene.
+	LOCAL nBaseRG ,nExecente
+	nExcedente = this.odatos.nExcedente
+	nBaseRG= nSumaNG + nPagosNG - nExcedente
+	
+	LOCAL nReteRG
+	nReteRG = 0
+	IF nBaseRG > 0
+		&&(5)
+		&&Le aplicamos el porcentaje segun el concepto y categorizacion
+		LOCAL nPorce
+		nPorce = this.oDatos.nPorcentaje
+		nReteRG = (nBaseRG*nPorce/100)
+		
+		&&(6)
+		&&El total calculado puede incluir retenciones ya efectuados a los comprobantes
+		&&Le restamos a la retencion calculada, retenciones previas
+		nReteRG = nReteRG - nRetePagosRG
+	ENDIF 
+	
+	&&(7)
+	LOCAL nMinimoRete
+	nMinimoRete = this.odatos.nMinimo
+	&&Si hay valor que retener. Insertamos la retencion en el AuxPlanCue
+	IF nReteRG >= nMinimoRete 0
+		this.insertarRete(nReteRG)
+	ENDIF 
+ENDIF 	
+
+oavisar.proceso('N')
+RETURN .t. 

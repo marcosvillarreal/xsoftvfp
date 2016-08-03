@@ -1,0 +1,67 @@
+Retención de Ganancias
+
+Tablas en SQL
+
+CREATE TABLE [dbo].[PadronAfip](
+	[id] [int] NOT NULL,
+	[idctacte] [int] NOT NULL,
+	[idcategoria] [int] NOT NULL,
+	[idconcepto] [int] NOT NULL,
+	[fecha] [datetime] NOT NULL,
+ CONSTRAINT [PK_PadronAfip] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[CateGan](
+	[id] [int] NOT NULL,
+	[abrevia] [char](2) COLLATE Modern_Spanish_CI_AS NOT NULL,
+	[nombre] [char](40) COLLATE Modern_Spanish_CI_AS NOT NULL,
+ CONSTRAINT [PK_CateGan] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[ConceptoGan](
+	[ID] [int] NOT NULL,
+	[numero] [int] NOT NULL,
+	[nombre] [char](130) COLLATE Modern_Spanish_CI_AS NOT NULL,
+ CONSTRAINT [PK_ConceptoGan] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[EscalaGan](
+	[id] [int] NOT NULL,
+	[idconcepto] [int] NOT NULL,
+	[impmin] [numeric](11, 2) NOT NULL,
+	[impmax] [numeric](11, 2) NOT NULL,
+	[baserete] [numeric](11, 2) NOT NULL,
+	[porceri] [numeric](6, 2) NOT NULL,
+	[porcerni] [numeric](6, 2) NOT NULL,
+	[excedente] [numeric](11, 2) NOT NULL,
+	[minimo] [numeric](11, 2) NOT NULL,
+ CONSTRAINT [PK_EscalaGan] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+
+CREATE TABLE [dbo].[tablagan](
+	[id] [numeric](12, 0) NOT NULL,
+	[idmaopera] [numeric](12, 0) NOT NULL,
+	[idconcepto] [int] NOT NULL,
+	[impmin] [numeric](11, 2) NOT NULL,
+	[impmax] [numeric](11, 2) NOT NULL,
+	[baserete] [numeric](11, 2) NOT NULL,
+	[porce] [numeric](6, 2) NOT NULL,
+	[excede] [numeric](11, 2) NOT NULL,
+	[min] [numeric](11, 2) NOT NULL,
+	[neto] [numeric](11, 2) NOT NULL,
+	[netoant] [numeric](11, 2) NOT NULL,
+	[rete] [numeric](11, 2) NOT NULL,
+	[reteant] [numeric](11, 2) NOT NULL
+) ON [PRIMARY]

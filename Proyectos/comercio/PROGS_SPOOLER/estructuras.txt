@@ -1,0 +1,12 @@
+estructura archivos
+
+
+seteotermi.switch			1  Terminal activa   1=activo, 0=inactivo
+							2  Puesto activo     1=activo, 0=inactivo
+					   	      3  lnmodpvta   
+							4  lngrapmod   
+							5  lnfacsstock 
+							6  lnfacsdto   
+							7  lnfecharec  
+							8  lnanugentil 
+							9  puestospooler

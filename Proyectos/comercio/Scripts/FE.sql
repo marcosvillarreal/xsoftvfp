@@ -1,0 +1,73 @@
+--Scrip para MilDelicias
+use Guerrero
+go
+/****** Objeto:  Table [dbo].[AfipComproba]    Fecha de la secuencia de comandos: 05/08/2016 12:07:28 ******/
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+--SET ANSI_PADDING ON
+--GO
+--CREATE TABLE [dbo].[AfipComproba](
+--	[id] [int] NOT NULL,
+--	[clasecomp] [char](1) NOT NULL,
+--	[letra] [char](1) NOT NULL,
+--	[codafip] [numeric](3, 0) NOT NULL,
+-- CONSTRAINT [PK_AfipComproba] PRIMARY KEY CLUSTERED 
+--(
+--	[id] ASC
+--)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+--) ON [PRIMARY]
+--
+--GO
+--SET ANSI_PADDING OFF
+--GO
+--/****** Objeto:  Table [dbo].[CabeImpresion]    Fecha de la secuencia de comandos: 05/08/2016 12:08:10 ******/
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+--SET ANSI_PADDING ON
+--GO
+--CREATE TABLE [dbo].[CabeImpresion](
+--	[Sucursal] [int] NOT NULL,
+--	[Empresa] [char](50) NULL,
+--	[Ramo] [char](50) NULL,
+--	[Direccion] [char](50) NULL,
+--	[TelefFax] [char](50) NULL,
+--	[Localidad] [char](50) NULL,
+--	[IVA] [char](50) NULL,
+--	[Otro01] [char](50) NULL,
+--	[Otro02] [char](50) NULL,
+--	[Otro03] [char](50) NULL,
+--	[Otro04] [char](50) NULL,
+--	[Otro05] [char](50) NULL,
+--	[Pathreporte] [char](100) NULL,
+-- CONSTRAINT [PK_CabeImpresion] PRIMARY KEY CLUSTERED 
+--(
+--	[Sucursal] ASC
+--)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+--) ON [PRIMARY]
+--
+--GO
+--SET ANSI_PADDING OFF
+
+--------Modificar Tablas
+--------Cabefac
+------infoafip	numeric(1, 0)	Checked
+------infocae	numeric(1, 0)	Checked
+------cae	char(14)	Checked
+------talonario	numeric(4, 0)	Checked
+------idtipocbte	int	Checked
+------vtocae	datetime	Checked
+------caetipo	char(4)	Checked
+------fechafacest	datetime	Checked
+
+--------PrefijoNro
+------activocae	numeric(1, 0)	Checked
+------activocaea	numeric(1, 0)	Checked
+------update prefijonro set activocae=0, activocaea=0
+
+--------TipoIVA
+------siapcpravta char(4)
+

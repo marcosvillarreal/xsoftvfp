@@ -1,0 +1,46 @@
+SAMPLE: How to use the RichTextBox ActiveX Control in Visual FoxPro
+
+© Microsoft Corporation 2000, All Rights Reserved.
+Contributions by Garrett Fitzgerald, Microsoft Corporation
+
+RichText.exe is a sample that demonstrates much of the functionality of the Rich Textbox
+control as used within Microsoft Visual FoxPro. Most of the properties are documented in
+this sample, with the exception of the OLE properties and the Tabs collection, among others.
+
+While the Rich Textbox control can be used with earlier versions of Visual FoxPro, 
+some of the supporting code in this sample was not in the language prior to 
+Visual FoxPro 6.0, and some of the properties may not have been in the control. 
+The code can be modified as necessary in other versions. 
+
+To use this example, do the following: 
+
+1. Run RichText.exe to unzip the files.
+
+2. In the Visual FoxPro Command window, go to the directory where you unzipped the file.
+
+3. Type DO FORM RichText.
+
+When you are in the form, you have a RichText edit area along with controls to set text
+properties. Most of them operate on the current selection, so you need to select 
+some of the text before you see any effect. 
+
+Click on the Bold, Italic, and other format buttons to toggle the appearance of the text. 
+Do the same for the Bullet button. Note, however, the bullet indent property only 
+takes effect when you turn the bullet on. If you change this after bulleting a 
+paragraph, you do not see anything change. 
+
+Maximum Length and Current Length apply to the whole document, not just the selection.
+
+The Save File and Load File buttons allow you to save the contents of the 
+Rich Text control as an .rtf file and to load .txt or .rtf files into the control.
+
+The Protected checkbox allows you to set part of the text as unchangeable in any way. 
+This prohibits change when any of the protected text is selected. It can also be 
+set to change only the unprotected text, but this involves bit more work.
+
+The Offset spinner allows you to move text above and below the baseline, so you 
+could do supescripts and subscripts.
+
+Several properties that can only be set at design time have their values displayed 
+on the form.
+

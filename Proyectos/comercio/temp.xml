@@ -1,0 +1,9 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+    <temp>
+       <dll>CapaNeg</dll>
+       <origen>VFP</origen>
+       <clsid>Odata.capaneg</clsid>
+       <servidor></servidor>
+    </temp>
+</VFPData>
