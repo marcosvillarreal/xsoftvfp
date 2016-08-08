@@ -1,0 +1,167 @@
+06-08-2016 19:09:35 , ABMPRODUCTO.CMDAGREGAR.CLICK, Error: LOOBJNAVEGA no es un objeto.;Linea : loObjnavega.RecordSource=lCaliasNavega;Error :       1924;Ultimo Alias Activo: _CSRPERCEPROV;Ultimo registro:          1 CNUMERO;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\000086IX02QE.TMP;Ultimo Control activo: 
+06-08-2016 19:09:35 , Pila de llamadas
+06-08-2016 19:09:35 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+06-08-2016 19:09:35 , Objeto      : abmproducto.cmdagregar.click
+06-08-2016 19:09:35 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+06-08-2016 19:09:35 , Nº de Linea :         36
+06-08-2016 19:09:35 , En el Fuente: 	.antesagregar
+06-08-2016 19:09:35 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\abmproducto.sct
+06-08-2016 19:09:35 , Objeto      : abmproducto.antesagregar
+06-08-2016 19:09:35 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\abmproducto.sct
+06-08-2016 19:09:35 , Nº de Linea :         19
+06-08-2016 19:09:35 , En el Fuente: thisform.leerperceproducto()
+06-08-2016 19:09:35 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\abmproducto.sct
+06-08-2016 19:09:35 , Objeto      : abmproducto.leerperceproducto
+06-08-2016 19:09:35 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\abmproducto.sct
+06-08-2016 19:09:35 , Nº de Linea :         58
+06-08-2016 19:09:35 , En el Fuente: thisform.bindergridon('ThisForm.Contenedor1.pframe1.Page6.KitgrillatildarPerceProv.Buscargrd1',lcalias,lcCtrlSource,AcolOdataNavega)
+06-08-2016 19:09:35 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+06-08-2016 19:09:35 , Objeto      : abmproducto.bindergridon
+06-08-2016 19:09:35 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+06-08-2016 19:09:35 , Nº de Linea :          5
+06-08-2016 19:09:35 , En el Fuente:     loObjnavega.RecordSource=lCaliasNavega
+06-08-2016 19:17:20 , MAIN, Error: No se encuentra el alias.;Linea : IF RECCOUNT('CSRAREANEG')=0;Error :         13;Ultimo Alias Activo: CSRDEPOSITO;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\000086IX03YX.TMP;Ultimo Control activo: 
+06-08-2016 19:17:20 , Pila de llamadas
+06-08-2016 19:17:20 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+06-08-2016 19:17:20 , Objeto      : main
+06-08-2016 19:17:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+06-08-2016 19:17:20 , Nº de Linea :        234
+06-08-2016 19:17:20 , En el Fuente: 	Read events   
+06-08-2016 19:17:20 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta_cae.sct
+06-08-2016 19:17:20 , Objeto      : regfacvta.containeringreso._txtlostfocus.gotfocus
+06-08-2016 19:17:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta_cae.sct
+06-08-2016 19:17:20 , Nº de Linea :         10
+06-08-2016 19:17:20 , En el Fuente: 	thisform.facturaciontradicional()
+06-08-2016 19:17:20 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta_cae.sct
+06-08-2016 19:17:20 , Objeto      : regfacvta.facturaciontradicional
+06-08-2016 19:17:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta_cae.sct
+06-08-2016 19:17:20 , Nº de Linea :         32
+06-08-2016 19:17:20 , En el Fuente: 		IF RECCOUNT('CSRAREANEG')=0
+06-08-2016 19:27:16 , MAIN, Error: El archivo 'j:\xsoftvfp\proyectos\comercio\regfacvta_cae.scx' no existe.;Linea : DO FORM &lcForm WITH lcparam1;Error :          1;Ultimo Alias Activo: CURPERFIL;Ultimo registro:         93 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\000086IX05AQ.TMP;Ultimo Control activo: 
+06-08-2016 19:27:16 , Pila de llamadas
+06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+06-08-2016 19:27:16 , Objeto      : main
+06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+06-08-2016 19:27:16 , Nº de Linea :        234
+06-08-2016 19:27:16 , En el Fuente: 	Read events   
+06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
+06-08-2016 19:27:16 , Objeto      : frmmenu1.treeview.keypress
+06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
+06-08-2016 19:27:16 , Nº de Linea :          7
+06-08-2016 19:27:16 , En el Fuente:    DODEFAULT(keyascii)
+06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\desarrollo\clases\forms.vct
+06-08-2016 19:27:16 , Objeto      : frmmenu.treeview.keypress
+06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\desarrollo\clases\forms.vct
+06-08-2016 19:27:16 , Nº de Linea :          7
+06-08-2016 19:27:16 , En el Fuente: 		this.dblClick()
+06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
+06-08-2016 19:27:16 , Objeto      : frmmenu1.treeview.dblclick
+06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
+06-08-2016 19:27:16 , Nº de Linea :          9
+06-08-2016 19:27:16 , En el Fuente: 	   &lcCmd
+06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\proc.fxp
+06-08-2016 19:27:16 , Objeto      : ejecutamenu
+06-08-2016 19:27:17 , Base Objeto : j:\xsoftsql\proyectos\hernan\progs\proc.prg
+06-08-2016 19:27:17 , Nº de Linea :       1579
+06-08-2016 19:27:17 , En el Fuente: 						DO FORM &lcForm WITH lcparam1
+06-08-2016 19:28:23 , MAIN, Error: No se encuentra el alias 'CSRAREANEG'.;Linea : This.txtnombre.value = &lccamponombre;Error :         13;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ultimo Control activo: 
+06-08-2016 19:28:23 , Pila de llamadas
+06-08-2016 19:28:23 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+06-08-2016 19:28:23 , Objeto      : main
+06-08-2016 19:28:23 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+06-08-2016 19:28:23 , Nº de Linea :        234
+06-08-2016 19:28:23 , En el Fuente: 	Read events   
+06-08-2016 19:28:23 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:23 , Objeto      : regfacvta.keypress
+06-08-2016 19:28:23 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:23 , Nº de Linea :         25
+06-08-2016 19:28:23 , En el Fuente: 	        .k_escape()
+06-08-2016 19:28:23 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:23 , Objeto      : regfacvta.k_escape
+06-08-2016 19:28:23 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:23 , Nº de Linea :          7
+06-08-2016 19:28:24 , En el Fuente: 	   		.limpiarcursor()
+06-08-2016 19:28:24 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:24 , Objeto      : regfacvta.limpiarcursor
+06-08-2016 19:28:24 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:24 , Nº de Linea :          7
+06-08-2016 19:28:24 , En el Fuente: 	.insertacursor(.t.)
+06-08-2016 19:28:24 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:24 , Objeto      : regfacvta.insertacursor
+06-08-2016 19:28:24 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:28:24 , Nº de Linea :         52
+06-08-2016 19:28:24 , En el Fuente: thisform.refresh()
+06-08-2016 19:28:24 , Programa    : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:28:24 , Objeto      : regfacvta.containeringreso.kitbuscaoaltaenareaneg.txtnombre.refresh
+06-08-2016 19:28:24 , Base Objeto : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:28:24 , Nº de Linea :          6
+06-08-2016 19:28:24 , En el Fuente: This.Parent.refrescardato("")
+06-08-2016 19:28:24 , Programa    : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:28:24 , Objeto      : regfacvta.containeringreso.kitbuscaoaltaenareaneg.refrescardato
+06-08-2016 19:28:24 , Base Objeto : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:28:24 , Nº de Linea :         22
+06-08-2016 19:28:24 , En el Fuente:    This.txtnombre.value = &lccamponombre
+06-08-2016 19:29:29 , MAIN, Error: No se encuentra el alias 'CSRAREANEG'.;Linea : This.txtnombre.value = &lccamponombre;Error :         13;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ultimo Control activo: 
+06-08-2016 19:29:29 , Pila de llamadas
+06-08-2016 19:29:29 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+06-08-2016 19:29:30 , Objeto      : main
+06-08-2016 19:29:30 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+06-08-2016 19:29:30 , Nº de Linea :        234
+06-08-2016 19:29:30 , En el Fuente: 	Read events   
+06-08-2016 19:29:30 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Objeto      : regfacvta.keypress
+06-08-2016 19:29:30 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Nº de Linea :         25
+06-08-2016 19:29:30 , En el Fuente: 	        .k_escape()
+06-08-2016 19:29:30 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Objeto      : regfacvta.k_escape
+06-08-2016 19:29:30 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Nº de Linea :          7
+06-08-2016 19:29:30 , En el Fuente: 	   		.limpiarcursor()
+06-08-2016 19:29:30 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Objeto      : regfacvta.limpiarcursor
+06-08-2016 19:29:30 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Nº de Linea :          7
+06-08-2016 19:29:30 , En el Fuente: 	.insertacursor(.t.)
+06-08-2016 19:29:30 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Objeto      : regfacvta.insertacursor
+06-08-2016 19:29:30 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:29:30 , Nº de Linea :         52
+06-08-2016 19:29:30 , En el Fuente: thisform.refresh()
+06-08-2016 19:29:30 , Programa    : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:29:30 , Objeto      : regfacvta.containeringreso.kitbuscaoaltaenareaneg.txtnombre.refresh
+06-08-2016 19:29:30 , Base Objeto : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:29:30 , Nº de Linea :          6
+06-08-2016 19:29:30 , En el Fuente: This.Parent.refrescardato("")
+06-08-2016 19:29:30 , Programa    : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:29:31 , Objeto      : regfacvta.containeringreso.kitbuscaoaltaenareaneg.refrescardato
+06-08-2016 19:29:31 , Base Objeto : j:\xsoftvfp\desarrollo\clases\controles.vct
+06-08-2016 19:29:31 , Nº de Linea :         22
+06-08-2016 19:29:31 , En el Fuente:    This.txtnombre.value = &lccamponombre
+06-08-2016 19:43:55 , MAIN, Error: No se encuentra el alias.;Linea : IF RECCOUNT(lcaliasseek)#0 AND lVerificarSiesta;Error :         13;Ultimo Alias Activo: CSRAUXCUERFAC;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\000086IX0AW6.TMP;Ultimo Control activo: 
+06-08-2016 19:43:55 , Pila de llamadas
+06-08-2016 19:43:55 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+06-08-2016 19:43:55 , Objeto      : main
+06-08-2016 19:43:55 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+06-08-2016 19:43:55 , Nº de Linea :        234
+06-08-2016 19:43:55 , En el Fuente: 	Read events   
+06-08-2016 19:43:55 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:43:55 , Objeto      : regfacvta.grid2.column1.text1.valid
+06-08-2016 19:43:55 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+06-08-2016 19:43:55 , Nº de Linea :         16
+06-08-2016 19:43:55 , En el Fuente: 	IF thisform.kitbuscarProd.fccodbarra_lostfocus(VAL(this.Value))
+06-08-2016 19:43:55 , Programa    : j:\xsoftsql\desarrollo\clases\controles.vct
+06-08-2016 19:43:55 , Objeto      : regfacvta.kitbuscarprod.fccodbarra_lostfocus
+06-08-2016 19:43:55 , Base Objeto : j:\xsoftsql\desarrollo\clases\controles.vct
+06-08-2016 19:43:55 , Nº de Linea :          8
+06-08-2016 19:43:55 , En el Fuente: lbfound = this.fc_lostfocus(lnthisvalue) &&CsrProducto.numero (N)
+06-08-2016 19:43:55 , Programa    : j:\xsoftsql\desarrollo\clases\controles.vct
+06-08-2016 19:43:55 , Objeto      : regfacvta.kitbuscarprod.fc_lostfocus
+06-08-2016 19:43:55 , Base Objeto : j:\xsoftsql\desarrollo\clases\controles.vct
+06-08-2016 19:43:55 , Nº de Linea :         28
+06-08-2016 19:43:55 , En el Fuente:    lbfound=this.traerdatos(.f.,"",thisvalue)
+06-08-2016 19:43:55 , Programa    : j:\xsoftsql\desarrollo\clases\controles.vct
+06-08-2016 19:43:55 , Objeto      : regfacvta.kitbuscarprod.traerdatos
+06-08-2016 19:43:56 , Base Objeto : j:\xsoftsql\desarrollo\clases\controles.vct
+06-08-2016 19:43:56 , Nº de Linea :         38
+06-08-2016 19:43:56 , En el Fuente: IF RECCOUNT(lcaliasseek)#0 AND lVerificarSiesta   

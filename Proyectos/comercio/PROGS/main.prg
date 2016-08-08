@@ -39,20 +39,20 @@ cRutaCAE = sys(5)+CURDIR()+"caevacio.jpg"
 cLogoFac	= SYS(5)+CURDIR()+"logofac.jpg"
 
 If lldesarrollo
-   lcdd=L+'\xsoftsql\proyectos\hernan\'
+   lcdd=L+'\xsoftvfp\proyectos\comercio\'
 *-- RUTA
    _rutaclases =lcdd+'Clases'
-   _rutaclased =L+'\xsoftsql\desarrollo\clases'
-   _rutabmpd   =L+'\xsoftsql\desarrollo\graficos'
+   _rutaclased =L+'\xsoftvfp\desarrollo\clases'
+   _rutabmpd   =L+'\xsoftvfp\desarrollo\graficos'
    _rutaprogs  =lcdd+'Progs'
    _rutamenu   =lcdd+'Menus'
    _rutadatos  =lcdd+'Datos'
    _rutabmps   =lcdd+'graphics'
    _rutaforms  =lcdd+'forms'
    _rutareports=lcdd+'reports' 
-    _rutaformsDesarrollo =L+'\xsoftsql\desarrollo\forms'
-   _rutaffc  =L+'\xsoftsql\desarrollo\clases\ffc'
-   _rutalib  =L+'\xsoftsql\desarrollo\lib'   
+    _rutaformsDesarrollo =L+'\xsoftvfp\desarrollo\forms'
+   _rutaffc  =L+'\xsoftvfp\desarrollo\clases\ffc'
+   _rutalib  =L+'\xsoftvfp\desarrollo\lib'   
    Set default to (lcdd) &&;(lcddc)
 
    Set path to &_rutaclases,&_rutaprogs,&_rutamenu,&_rutadatos,&_rutabmps,&_rutaforms;
