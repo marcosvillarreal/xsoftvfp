@@ -1,6 +1,6 @@
 Parameters lnIdprograma
 
-lnIdprograma = Iif(Pcount()<1,"3",lnIdprograma)
+lnIdprograma = Iif(Pcount()<1,"2",lnIdprograma)
 
 *===================
 *= ARCHIVO PRINCIPAL
@@ -11,7 +11,7 @@ lnIdprograma = Iif(Pcount()<1,"3",lnIdprograma)
 
 *clear all
 Set Classlib To
-l='c:'
+l='j:'
 Set Talk Off
 lldesarrollo=(_vfp.StartMode()#4)
 

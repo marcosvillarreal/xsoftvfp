@@ -23,8 +23,8 @@ lccaption=_Screen.Caption
 
 lcdd=Alltrim(Curdir()) && directorio de arranque
 If lldesarrollo
-	lcdd    =l+'\xsoftSQL\proyectos\hernan\'
-	lcdirdes=l+'\xsoftSQL\desarrollo'
+	lcdd    =l+'\xsoftvfp\proyectos\comercio\'
+	lcdirdes=l+'\xsoftvfp\desarrollo'
 *-- RUTA
 	_rutaclases =lcdd+'Clases' &&
 	_rutaclased =lcdirdes+'\clases'&&
