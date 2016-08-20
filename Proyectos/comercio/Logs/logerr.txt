@@ -165,3 +165,224 @@
 06-08-2016 19:43:56 , Base Objeto : j:\xsoftsql\desarrollo\clases\controles.vct
 06-08-2016 19:43:56 , Nº de Linea :         38
 06-08-2016 19:43:56 , En el Fuente: IF RECCOUNT(lcaliasseek)#0 AND lVerificarSiesta   
+15-08-2016 10:48:48 , ABMRUBROS._TEXTBOX1.KEYPRESS, Error: LOOBJNAVEGA no es un objeto.;Linea : loObjnavega.RecordSource=lCaliasNavega;Error :       1924;Ultimo Alias Activo: _CSRPERCEPROV;Ultimo registro:          1 CNUMERO;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL00J1.TMP;Ultimo Control activo: NOMBRE
+15-08-2016 10:48:48 , Pila de llamadas
+15-08-2016 10:48:49 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 10:48:49 , Objeto      : abmrubros._textbox1.keypress
+15-08-2016 10:48:49 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 10:48:49 , Nº de Linea :        125
+15-08-2016 10:48:49 , En el Fuente: 	    ThisForm.Buscarcmd1.Buscar(.F.,ALLTRIM(this.Value))
+15-08-2016 10:48:49 , Programa    : j:\xsoftvfp\desarrollo\clases\controles.vct
+15-08-2016 10:48:49 , Objeto      : abmrubros.buscarcmd1.buscar
+15-08-2016 10:48:49 , Base Objeto : j:\xsoftvfp\desarrollo\clases\controles.vct
+15-08-2016 10:48:49 , Nº de Linea :         90
+15-08-2016 10:48:49 , En el Fuente: 	loGrid.setfocus()
+15-08-2016 10:48:49 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\abmrubros.sct
+15-08-2016 10:48:49 , Objeto      : abmrubros.contenedor1.gridabm1.afterrowcolchange
+15-08-2016 10:48:49 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\abmrubros.sct
+15-08-2016 10:48:49 , Nº de Linea :         14
+15-08-2016 10:48:49 , En el Fuente:       thisform.leerpercerubro()
+15-08-2016 10:48:49 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\abmrubros.sct
+15-08-2016 10:48:49 , Objeto      : abmrubros.leerpercerubro
+15-08-2016 10:48:49 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\abmrubros.sct
+15-08-2016 10:48:49 , Nº de Linea :         58
+15-08-2016 10:48:49 , En el Fuente: thisform.bindergridon('ThisForm.Contenedor1.pframe1.Page1.KitgrillatildarPerceProv.Buscargrd1',lcalias,lcCtrlSource,AcolOdataNavega)
+15-08-2016 10:48:49 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 10:48:49 , Objeto      : abmrubros.bindergridon
+15-08-2016 10:48:49 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 10:48:49 , Nº de Linea :          5
+15-08-2016 10:48:49 , En el Fuente:     loObjnavega.RecordSource=lCaliasNavega
+15-08-2016 10:49:36 , ABMRUBROS._TEXTBOX1.KEYPRESS, Error: No se encuentra el alias '_CSRPERCEPROV'.;Linea : go TOP IN _CsrPerceProv;Error :         13;Ultimo Alias Activo: _CSRAREANEG;Ultimo registro:          1 CNUMERO;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL00MG.TMP;Ultimo Control activo: NOMBRE
+15-08-2016 10:49:36 , Pila de llamadas
+15-08-2016 10:49:36 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 10:49:36 , Objeto      : abmrubros._textbox1.keypress
+15-08-2016 10:49:36 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 10:49:36 , Nº de Linea :        125
+15-08-2016 10:49:36 , En el Fuente: 	    ThisForm.Buscarcmd1.Buscar(.F.,ALLTRIM(this.Value))
+15-08-2016 10:49:36 , Programa    : j:\xsoftvfp\desarrollo\clases\controles.vct
+15-08-2016 10:49:36 , Objeto      : abmrubros.buscarcmd1.buscar
+15-08-2016 10:49:36 , Base Objeto : j:\xsoftvfp\desarrollo\clases\controles.vct
+15-08-2016 10:49:36 , Nº de Linea :         90
+15-08-2016 10:49:36 , En el Fuente: 	loGrid.setfocus()
+15-08-2016 10:49:36 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\abmrubros.sct
+15-08-2016 10:49:36 , Objeto      : abmrubros.contenedor1.gridabm1.afterrowcolchange
+15-08-2016 10:49:36 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\abmrubros.sct
+15-08-2016 10:49:37 , Nº de Linea :         15
+15-08-2016 10:49:37 , En el Fuente:       go TOP IN _CsrPerceProv
+15-08-2016 17:43:20 , MAIN, Error: LOBJPRECIOACTUAL no es un objeto.;Linea : lhaycambio = IIF(lobjPrecioactual.costo#Csrproducto.costo,.t.,.f.);Error :       1924;Ultimo Alias Activo: CSRSUBPRODUCTO;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL03LN.TMP;Ultimo Control activo: 
+15-08-2016 17:43:20 , Pila de llamadas
+15-08-2016 17:43:20 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+15-08-2016 17:43:20 , Objeto      : main
+15-08-2016 17:43:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+15-08-2016 17:43:20 , Nº de Linea :        234
+15-08-2016 17:43:20 , En el Fuente: 	Read events   
+15-08-2016 17:43:20 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:20 , Objeto      : abmproducto.keypress
+15-08-2016 17:43:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:20 , Nº de Linea :          5
+15-08-2016 17:43:20 , En el Fuente:        thisform.k_ctrl_enter()
+15-08-2016 17:43:20 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:20 , Objeto      : abmproducto.k_ctrl_enter
+15-08-2016 17:43:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:20 , Nº de Linea :          4
+15-08-2016 17:43:20 , En el Fuente: thisform.CmdSalvar.click()
+15-08-2016 17:43:21 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:21 , Objeto      : abmproducto.cmdsalvar.click
+15-08-2016 17:43:21 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:21 , Nº de Linea :          9
+15-08-2016 17:43:21 , En el Fuente: 		llok=.salvar()
+15-08-2016 17:43:21 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:21 , Objeto      : abmproducto.salvar
+15-08-2016 17:43:21 , Base Objeto : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
+15-08-2016 17:43:21 , Nº de Linea :         19
+15-08-2016 17:43:21 , En el Fuente:    llok=thisform.validar()
+15-08-2016 17:43:21 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\abmproducto.sct
+15-08-2016 17:43:21 , Objeto      : abmproducto.validar
+15-08-2016 17:43:21 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\abmproducto.sct
+15-08-2016 17:43:21 , Nº de Linea :         45
+15-08-2016 17:43:21 , En el Fuente: 	   lhaycambio = IIF(lobjPrecioactual.costo#Csrproducto.costo,.t.,.f.)
+15-08-2016 17:58:40 , MAIN, Error: No se encuentra el alias.;Linea : Oca = GETCURSORADAPTER(lcalias);Error :         13;Ultimo Alias Activo: CSRFECCAJA;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL059O.TMP;Ultimo Control activo: 
+15-08-2016 17:58:40 , Pila de llamadas
+15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+15-08-2016 17:58:40 , Objeto      : main
+15-08-2016 17:58:40 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+15-08-2016 17:58:40 , Nº de Linea :        234
+15-08-2016 17:58:40 , En el Fuente: 	Read events   
+15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 17:58:40 , Objeto      : regfacvta.containeringreso._txtlostfocus.gotfocus
+15-08-2016 17:58:40 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 17:58:40 , Nº de Linea :          5
+15-08-2016 17:58:40 , En el Fuente: thisform.controlinicial()
+15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 17:58:40 , Objeto      : regfacvta.controlinicial
+15-08-2016 17:58:40 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 17:58:40 , Nº de Linea :         43
+15-08-2016 17:58:40 , En el Fuente: 			llok = this.oRegFacVta.cajadiaria(ldfecha)
+15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 17:58:40 , Objeto      : regfacvta.oregfacvta.cajadiaria
+15-08-2016 17:58:40 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 17:58:40 , Nº de Linea :          7
+15-08-2016 17:58:40 , En el Fuente: IF NOT this.actualizar()
+15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 17:58:40 , Objeto      : regfacvta.oregfacvta.actualizar
+15-08-2016 17:58:40 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 17:58:40 , Nº de Linea :         12
+15-08-2016 17:58:40 , En el Fuente: 	        oCadapter = thisform.obtenercursor('Csrdetanrocaja')
+15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\desarrollo\clases\forms.vct
+15-08-2016 17:58:40 , Objeto      : regfacvta.obtenercursor
+15-08-2016 17:58:40 , Base Objeto : j:\xsoftvfp\desarrollo\clases\forms.vct
+15-08-2016 17:58:40 , Nº de Linea :         19
+15-08-2016 17:58:41 , En el Fuente: 	Oca = GETCURSORADAPTER(lcalias)
+15-08-2016 18:06:19 , MAIN, Error: No se encuentra el alias.;Linea : Oca = GETCURSORADAPTER(lcalias);Error :         13;Ultimo Alias Activo: CSRSETEO;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL05U2.TMP;Ultimo Control activo: 
+15-08-2016 18:06:19 , Pila de llamadas
+15-08-2016 18:06:19 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+15-08-2016 18:06:19 , Objeto      : main
+15-08-2016 18:06:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+15-08-2016 18:06:19 , Nº de Linea :        234
+15-08-2016 18:06:19 , En el Fuente: 	Read events   
+15-08-2016 18:06:19 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Objeto      : regfacvta.containeringreso._txtlostfocus.gotfocus
+15-08-2016 18:06:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Nº de Linea :          4
+15-08-2016 18:06:19 , En el Fuente: thisform.iniciarentorno()
+15-08-2016 18:06:19 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Objeto      : regfacvta.iniciarentorno
+15-08-2016 18:06:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Nº de Linea :          4
+15-08-2016 18:06:19 , En el Fuente:      	this.iniciavariables()  
+15-08-2016 18:06:19 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Objeto      : regfacvta.iniciavariables
+15-08-2016 18:06:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Nº de Linea :         20
+15-08-2016 18:06:19 , En el Fuente: 	IF !.obtenerdatos('CsrParaConfig',lcCmd)
+15-08-2016 18:06:19 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Objeto      : regfacvta.obtenerdatos
+15-08-2016 18:06:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:19 , Nº de Linea :          4
+15-08-2016 18:06:19 , En el Fuente: oCa = thisform.obtenercursor(lcalias)
+15-08-2016 18:06:20 , Programa    : j:\xsoftvfp\desarrollo\clases\forms.vct
+15-08-2016 18:06:20 , Objeto      : regfacvta.obtenercursor
+15-08-2016 18:06:20 , Base Objeto : j:\xsoftvfp\desarrollo\clases\forms.vct
+15-08-2016 18:06:20 , Nº de Linea :         19
+15-08-2016 18:06:20 , En el Fuente: 	Oca = GETCURSORADAPTER(lcalias)
+15-08-2016 18:06:53 , MAIN, Error: No se encuentra el alias 'CSRPARAMETROC'.;Linea : REPLACE fechafac WITH dfecfactura IN CsrParametroC;Error :         13;Ultimo Alias Activo: CSRDETANROCAJA;Ultimo registro:         -1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL06B5.TMP;Ultimo Control activo: 
+15-08-2016 18:06:53 , Pila de llamadas
+15-08-2016 18:06:53 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+15-08-2016 18:06:53 , Objeto      : main
+15-08-2016 18:06:53 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+15-08-2016 18:06:53 , Nº de Linea :        234
+15-08-2016 18:06:53 , En el Fuente: 	Read events   
+15-08-2016 18:06:53 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:53 , Objeto      : regfacvta.containeringreso._txtlostfocus.gotfocus
+15-08-2016 18:06:53 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:53 , Nº de Linea :          5
+15-08-2016 18:06:53 , En el Fuente: thisform.controlinicial()
+15-08-2016 18:06:53 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:53 , Objeto      : regfacvta.controlinicial
+15-08-2016 18:06:53 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:06:54 , Nº de Linea :         43
+15-08-2016 18:06:54 , En el Fuente: 			llok = this.oRegFacVta.cajadiaria(ldfecha)
+15-08-2016 18:06:54 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:06:54 , Objeto      : regfacvta.oregfacvta.cajadiaria
+15-08-2016 18:06:54 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:06:54 , Nº de Linea :          7
+15-08-2016 18:06:54 , En el Fuente: IF NOT this.actualizar()
+15-08-2016 18:06:54 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:06:54 , Objeto      : regfacvta.oregfacvta.actualizar
+15-08-2016 18:06:54 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:06:54 , Nº de Linea :         19
+15-08-2016 18:06:54 , En el Fuente: 	        llok = this.grabardato_caja()					     
+15-08-2016 18:06:54 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:06:54 , Objeto      : regfacvta.oregfacvta.grabardato_caja
+15-08-2016 18:06:54 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:06:54 , Nº de Linea :         50
+15-08-2016 18:06:54 , En el Fuente: REPLACE fechafac WITH dfecfactura IN CsrParametroC
+15-08-2016 18:20:57 , MAIN, Error: No se encuentra el alias 'CSRPARAMETROC'.;Linea : REPLACE fechafac WITH dfecfactura IN CsrParametroC;Error :         13;Ultimo Alias Activo: CSRDETANROCAJA;Ultimo registro:         -1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL06VY.TMP;Ultimo Control activo: 
+15-08-2016 18:20:57 , Pila de llamadas
+15-08-2016 18:20:57 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+15-08-2016 18:20:57 , Objeto      : main
+15-08-2016 18:20:57 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+15-08-2016 18:20:57 , Nº de Linea :        234
+15-08-2016 18:20:57 , En el Fuente: 	Read events   
+15-08-2016 18:20:57 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:20:57 , Objeto      : regfacvta.containeringreso._txtlostfocus.gotfocus
+15-08-2016 18:20:57 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:20:57 , Nº de Linea :          5
+15-08-2016 18:20:57 , En el Fuente: thisform.controlinicial()
+15-08-2016 18:20:57 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:20:57 , Objeto      : regfacvta.controlinicial
+15-08-2016 18:20:57 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:20:57 , Nº de Linea :         43
+15-08-2016 18:20:57 , En el Fuente: 			llok = this.oRegFacVta.cajadiaria(ldfecha)
+15-08-2016 18:20:57 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:20:57 , Objeto      : regfacvta.oregfacvta.cajadiaria
+15-08-2016 18:20:57 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:20:57 , Nº de Linea :          7
+15-08-2016 18:20:57 , En el Fuente: IF NOT this.actualizar()
+15-08-2016 18:20:58 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:20:58 , Objeto      : regfacvta.oregfacvta.actualizar
+15-08-2016 18:20:58 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:20:58 , Nº de Linea :         19
+15-08-2016 18:20:58 , En el Fuente: 	        llok = this.grabardato_caja()					     
+15-08-2016 18:20:58 , Programa    : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:20:58 , Objeto      : regfacvta.oregfacvta.grabardato_caja
+15-08-2016 18:20:58 , Base Objeto : j:\xsoftvfp\desarrollo\clases\onegocio.vct
+15-08-2016 18:20:58 , Nº de Linea :         50
+15-08-2016 18:20:58 , En el Fuente: REPLACE fechafac WITH dfecfactura IN CsrParametroC
+15-08-2016 18:21:57 , MAIN, Error: No se encuentra el alias 'CSRPARAMETROC'.;Linea : SELECT CsrParametroC;Error :         13;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ultimo Control activo: 
+15-08-2016 18:21:57 , Pila de llamadas
+15-08-2016 18:21:57 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+15-08-2016 18:21:57 , Objeto      : main
+15-08-2016 18:21:57 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+15-08-2016 18:21:57 , Nº de Linea :        234
+15-08-2016 18:21:57 , En el Fuente: 	Read events   
+15-08-2016 18:21:57 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:21:57 , Objeto      : regfacvta.containeringreso._txtlostfocus.gotfocus
+15-08-2016 18:21:57 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:21:57 , Nº de Linea :          5
+15-08-2016 18:21:57 , En el Fuente: thisform.controlinicial()
+15-08-2016 18:21:57 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:21:57 , Objeto      : regfacvta.controlinicial
+15-08-2016 18:21:57 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
+15-08-2016 18:21:57 , Nº de Linea :         32
+15-08-2016 18:21:57 , En el Fuente: 		SELECT CsrParametroC

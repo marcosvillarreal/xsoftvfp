@@ -347,7 +347,7 @@ pnLongAc = 0
 pnTammax = 600000
 pnFtama = 0
 
-tcTexto=Dtoc(Datetime())+' , '+tcTexto
+tcTexto=ttoc(Datetime())+' , '+tcTexto
 
 If File(Lcfilelog)                && ¿Existe el archivo?
 	pnFich = Fopen(Lcfilelog,12)  && Sí: abrir lect./escrit.

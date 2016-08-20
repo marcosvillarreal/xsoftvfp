@@ -59,6 +59,7 @@ RETURN USED(tcAlias)
 *------------------------------------------------------------
 FUNCTION VerErrorSQL
 PARAMETERS nError
+stop()
 LOCAL cMensaje
 DO CASE 
 CASE nError=0
