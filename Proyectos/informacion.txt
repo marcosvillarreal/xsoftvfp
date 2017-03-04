@@ -1,0 +1,46 @@
+El sistema consta de varios modulos
+
+STOCK: Modulo referido a los articulos, precios, movimientos de articulos.
+* Archivos: Altas, Bajas y Modificaciones de articulos y otros datos sobre los articulos.
+* Precios: Listas de Precios, Bonificaciones de los articulos. Cambios de precios individual y grupal
+* Movimientos: Registración de ajustes sobre el stock
+* Reportes: Listados para recuperar diferentes tipos de información sobre el stock.
+
+CUENTA CORRIENTES: Modulo referido a clientes,proveedores.
+* Archivos: Altas, Bajas y Modificaciones sobre clientes,proveedores y bancos.
+* Registraciones: Operaciones que se realizan sobre movimientos de cuenta corriente.
+* Reportes: Listados que entregan información de clientes y proveedores (resumen de cuenta, saldos por cta etc)
+
+VENTAS: Modulo principal donde se realizan las ventas a clientes.
+* Registración: Presupuestos, Ordenes de Venta, Facturacion, Facturacion con Remito de Entrega.
+* Reportes: Listados que ofrecen información sobre las ventas realizadas.
+* Impuestos: Listados que ofrecen información impositiva sobre las ventas.
+
+COMPRAS: Modulo principal donde se realizan las compras a proveedores.
+* Facturacion: Mercaderia (Compras que registran stock + Impuestos contables) y Registracion (Compras que solo se asientan contablemente). Ambos casos asientas en la cuenta corriente si el usuario lo desea.
+* Reportes: Listado de movimientos que se registraron en el modulo
+* Impuestos: Listado impositivo de Credito Fiscal (Subdiario de IVA Compra)
+
+CAJA: Modulo donde se registran los movimientos de caja.
+* Registraciones: Se registran Ingresor o Egresos sobre la caja.
+* Reportes: Listados informativos de la caja, cierre de caja y reaprtura de cajas cerradas. Planilla de caja.
+
+BANCOS: Modulo principal sobre movimientos bancarios
+* Registraciones: se pueden registrar diferentes movimientos bancarios (Debito, Creditos, Deposito de Efectivo etc).
+Cheques Rechazados a proveedores, Conciliacion Bancaria.
+* Reportes: Listados con información del bancario (listado de conciliacion, resumen de cuentas, libro banco etc)
+
+CARTERA DE CHEQUES: Modulo principal sobre la cartera de cheques
+* Registraciones: Movimientos sobre la cartera de cheques, ingresos y retiros de estos.
+* Reportes: Listados de información sobre la cartera de cheques.
+
+ESTADISTICAS: Diferentes estadisticas donde se recupera y muestra la información requerida por el operador
+
+CONTABILIDAD: Modulo principal del manejo contable
+* Archivos: Plan de cuentas contables, Ejercicios contables.
+* Registración: Carga de asientos manuales, Asiento de Apertura y Asiento de Cierre.
+* Reportes: Mayor de Cuentas Contables, Balance de sumas y saldos, Libro Diario y Balance General
+
+OTROS SISTEMAS: Reportes para sistemas externos. CITI Ventas y Compras, ARBA etc
+
+
