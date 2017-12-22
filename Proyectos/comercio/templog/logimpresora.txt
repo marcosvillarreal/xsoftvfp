@@ -1,0 +1,2 @@
+22-12-2017 01:34:35 PM , Impresora:pdfcreator tipo:8 miprinter:PDFCREATOR
+22-12-2017 01:36:10 PM , Impresora:c:\listado.txt tipo:8 miprinter:C:\LISTADO.TXT
