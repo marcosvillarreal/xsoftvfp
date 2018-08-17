@@ -1,2 +1,5 @@
 22-12-2017 01:34:35 PM , Impresora:pdfcreator tipo:8 miprinter:PDFCREATOR
 22-12-2017 01:36:10 PM , Impresora:c:\listado.txt tipo:8 miprinter:C:\LISTADO.TXT
+17-08-2018 02:47:14 PM , Impresora:file_xps tipo:8 miprinter:FILE_XPS
+17-08-2018 02:49:26 PM , Impresora:file_xps tipo:8 miprinter:FILE_XPS
+17-08-2018 02:51:24 PM , Impresora:file_xps tipo:8 miprinter:FILE_XPS

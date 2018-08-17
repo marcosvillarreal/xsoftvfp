@@ -1,56 +1,3 @@
-06-08-2016 19:17:20 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta_cae.sct
-06-08-2016 19:17:20 , Nº de Linea :         32
-06-08-2016 19:17:20 , En el Fuente: 		IF RECCOUNT('CSRAREANEG')=0
-06-08-2016 19:27:16 , MAIN, Error: El archivo 'j:\xsoftvfp\proyectos\comercio\regfacvta_cae.scx' no existe.;Linea : DO FORM &lcForm WITH lcparam1;Error :          1;Ultimo Alias Activo: CURPERFIL;Ultimo registro:         93 ;DBF: C:\USERS\MARCO\APPDATA\L
-
-
-
-
-
-
-
-
-OCAL\TEMP\000086IX05AQ.TMP;Ultimo Control activo: 
-06-08-2016 19:27:16 , Pila de llamadas
-06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
-06-08-2016 19:27:16 , Objeto      : main
-06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
-06-08-2016 19:27:16 , Nº de Linea :        234
-06-08-2016 19:27:16 , En el Fuente: 	Read events   
-06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
-06-08-2016 19:27:16 , Objeto      : frmmenu1.treeview.keypress
-06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
-06-08-2016 19:27:16 , Nº de Linea :          7
-06-08-2016 19:27:16 , En el Fuente:    DODEFAULT(keyascii)
-06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\desarrollo\clases\forms.vct
-06-08-2016 19:27:16 , Objeto      : frmmenu.treeview.keypress
-06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\desarrollo\clases\forms.vct
-06-08-2016 19:27:16 , Nº de Linea :          7
-06-08-2016 19:27:16 , En el Fuente: 		this.dblClick()
-06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
-06-08-2016 19:27:16 , Objeto      : frmmenu1.treeview.dblclick
-06-08-2016 19:27:16 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\frmmenu.sct
-06-08-2016 19:27:16 , Nº de Linea :          9
-06-08-2016 19:27:16 , En el Fuente: 	   &lcCmd
-06-08-2016 19:27:16 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\proc.fxp
-06-08-2016 19:27:16 , Objeto      : ejecutamenu
-06-08-2016 19:27:17 , Base Objeto : j:\xsoftsql\proyectos\hernan\progs\proc.prg
-06-08-2016 19:27:17 , Nº de Linea :       1579
-06-08-2016 19:27:17 , En el Fuente: 						DO FORM &lcForm WITH lcparam1
-06-08-2016 19:28:23 , MAIN, Error: No se encuentra el alias 'CSRAREANEG'.;Linea : This.txtnombre.value = &lccamponombre;Error :         13;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ultimo Control activo: 
-06-08-2016 19:28:23 , Pila de llamadas
-06-08-2016 19:28:23 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
-06-08-2016 19:28:23 , Objeto      : main
-06-08-2016 19:28:23 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
-06-08-2016 19:28:23 , Nº de Linea :        234
-06-08-2016 19:28:23 , En el Fuente: 	Read events   
-06-08-2016 19:28:23 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
-06-08-2016 19:28:23 , Objeto      : regfacvta.keypress
-06-08-2016 19:28:23 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
-06-08-2016 19:28:23 , Nº de Linea :         25
-06-08-2016 19:28:23 , En el Fuente: 	        .k_escape()
-06-08-2016 19:28:23 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
-06-08-2016 19:28:23 , Objeto      : regfacvta.k_escape
 06-08-2016 19:28:23 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
 06-08-2016 19:28:23 , Nº de Linea :          7
 06-08-2016 19:28:24 , En el Fuente: 	   		.limpiarcursor()
@@ -120,6 +67,14 @@ OCAL\TEMP\000086IX05AQ.TMP;Ultimo Control activo:
 
 
 
+
+
+
+
+
+
+
+
 P;Ultimo Control activo: 
 06-08-2016 19:43:55 , Pila de llamadas
 06-08-2016 19:43:55 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
@@ -148,6 +103,14 @@ P;Ultimo Control activo:
 06-08-2016 19:43:56 , Nº de Linea :         38
 06-08-2016 19:43:56 , En el Fuente: IF RECCOUNT(lcaliasseek)#0 AND lVerificarSiesta   
 15-08-2016 10:48:48 , ABMRUBROS._TEXTBOX1.KEYPRESS, Error: LOOBJNAVEGA no es un objeto.;Linea : loObjnavega.RecordSource=lCaliasNavega;Error :       1924;Ultimo Alias Activo: _CSRPERCEPROV;Ultimo registro:          1 CNUMERO;DBF: C:\USERS\MARCO\APPDATA\L
+
+
+
+
+
+
+
+
 
 
 
@@ -192,6 +155,14 @@ OCAL\TEMP\00009JPL00J1.TMP;Ultimo Control activo: NOMBRE
 
 
 
+
+
+
+
+
+
+
+
 \TEMP\00009JPL00MG.TMP;Ultimo Control activo: NOMBRE
 15-08-2016 10:49:36 , Pila de llamadas
 15-08-2016 10:49:36 , Programa    : j:\xsoftvfp\proyectos\comercio\clases\oformslocal.vct
@@ -210,6 +181,14 @@ OCAL\TEMP\00009JPL00J1.TMP;Ultimo Control activo: NOMBRE
 15-08-2016 10:49:37 , Nº de Linea :         15
 15-08-2016 10:49:37 , En el Fuente:       go TOP IN _CsrPerceProv
 15-08-2016 17:43:20 , MAIN, Error: LOBJPRECIOACTUAL no es un objeto.;Linea : lhaycambio = IIF(lobjPrecioactual.costo#Csrproducto.costo,.t.,.f.);Error :       1924;Ultimo Alias Activo: CSRSUBPRODUCTO;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDAT
+
+
+
+
+
+
+
+
 
 
 
@@ -259,6 +238,14 @@ A\LOCAL\TEMP\00009JPL03LN.TMP;Ultimo Control activo:
 
 
 
+
+
+
+
+
+
+
+
 tivo: 
 15-08-2016 17:58:40 , Pila de llamadas
 15-08-2016 17:58:40 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
@@ -292,6 +279,14 @@ tivo:
 15-08-2016 17:58:40 , Nº de Linea :         19
 15-08-2016 17:58:41 , En el Fuente: 	Oca = GETCURSORADAPTER(lcalias)
 15-08-2016 18:06:19 , MAIN, Error: No se encuentra el alias.;Linea : Oca = GETCURSORADAPTER(lcalias);Error :         13;Ultimo Alias Activo: CSRSETEO;Ultimo registro:          1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\TEMP\00009JPL05U2.TMP;Ultimo Control acti
+
+
+
+
+
+
+
+
 
 
 
@@ -341,6 +336,14 @@ vo:
 
 
 
+
+
+
+
+
+
+
+
 TEMP\00009JPL06B5.TMP;Ultimo Control activo: 
 15-08-2016 18:06:53 , Pila de llamadas
 15-08-2016 18:06:53 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
@@ -374,6 +377,14 @@ TEMP\00009JPL06B5.TMP;Ultimo Control activo:
 15-08-2016 18:06:54 , Nº de Linea :         50
 15-08-2016 18:06:54 , En el Fuente: REPLACE fechafac WITH dfecfactura IN CsrParametroC
 15-08-2016 18:20:57 , MAIN, Error: No se encuentra el alias 'CSRPARAMETROC'.;Linea : REPLACE fechafac WITH dfecfactura IN CsrParametroC;Error :         13;Ultimo Alias Activo: CSRDETANROCAJA;Ultimo registro:         -1 ;DBF: C:\USERS\MARCO\APPDATA\LOCAL\
+
+
+
+
+
+
+
+
 
 
 
@@ -440,6 +451,14 @@ TEMP\00009JPL06VY.TMP;Ultimo Control activo:
 
 
 
+
+
+
+
+
+
+
+
 Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ultimo Control activo: 
 04-03-2017 17:57:46 , Pila de llamadas
 04-03-2017 17:57:46 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
@@ -465,6 +484,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 04-03-2017 17:58:50 , Nº de Linea :        179
 04-03-2017 17:58:50 , En el Fuente: 		DO FORM configbd
 04-03-2017 18:09:06 , REGFACVTA.INIT, Error: No hay ninguna tabla abierta en el área de trabajo actual.;Linea : .FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * IIF(m.lnHeightRatio < m.lnWidthRatio, m.lnHeightRatio, m.lnWidthRatio) ) );Error : 
+
+
+
+
+
+
+
+
 
 
 
@@ -519,6 +546,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 
 
 
+
+
+
+
+
+
+
+
         52;Ultimo Alias Activo: CSRPARAMETROC;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092Q104G5.TMP;Ultimo Control activo: 
 04-03-2017 18:10:00 , Pila de llamadas
 04-03-2017 18:10:00 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
@@ -557,6 +592,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 04-03-2017 18:10:00 , Nº de Linea :        105
 04-03-2017 18:10:00 , En el Fuente: 		.FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * 			IIF(m.lnHeightRatio < m.lnWidthRatio, 			m.lnHeightRatio, m.lnWidthRatio) ) )
 04-03-2017 18:10:13 , REGFACVTA.INIT, Error: No hay ninguna tabla abierta en el área de trabajo actual.;Linea : .FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * IIF(m.lnHeightRatio < m.lnWidthRatio, m.lnHeightRatio, m.lnWidthRatio) ) );Error : 
+
+
+
+
+
+
+
+
 
 
 
@@ -611,6 +654,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 
 
 
+
+
+
+
+
+
+
+
         52;Ultimo Alias Activo: CSRPARAMETROC;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092Q104T0.TMP;Ultimo Control activo: 
 04-03-2017 18:15:17 , Pila de llamadas
 04-03-2017 18:15:17 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
@@ -649,6 +700,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 04-03-2017 18:15:17 , Nº de Linea :        105
 04-03-2017 18:15:17 , En el Fuente: 		.FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * 			IIF(m.lnHeightRatio < m.lnWidthRatio, 			m.lnHeightRatio, m.lnWidthRatio) ) )
 04-03-2017 18:15:41 , REGFACVTA.UNLOAD, Error: No hay ninguna tabla abierta en el área de trabajo actual.;Linea : .FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * IIF(m.lnHeightRatio < m.lnWidthRatio, m.lnHeightRatio, m.lnWidthRatio) ) );Error 
+
+
+
+
+
+
+
+
 
 
 
@@ -708,6 +767,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 
 
 
+
+
+
+
+
+
+
+
         52;Ultimo Alias Activo: CSRPARAMETROC;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092Q10558.TMP;Ultimo Control activo: 
 04-03-2017 18:16:45 , Pila de llamadas
 04-03-2017 18:16:45 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
@@ -746,6 +813,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 04-03-2017 18:16:45 , Nº de Linea :        105
 04-03-2017 18:16:45 , En el Fuente: 		.FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * 			IIF(m.lnHeightRatio < m.lnWidthRatio, 			m.lnHeightRatio, m.lnWidthRatio) ) )
 04-03-2017 18:17:13 , REGFACVTA.INIT, Error: No hay ninguna tabla abierta en el área de trabajo actual.;Linea : .FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * IIF(m.lnHeightRatio < m.lnWidthRatio, m.lnHeightRatio, m.lnWidthRatio) ) );Error : 
+
+
+
+
+
+
+
+
 
 
 
@@ -800,6 +875,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 
 
 
+
+
+
+
+
+
+
+
         52;Ultimo Alias Activo: CSRPARAMETROC;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092Q105HC.TMP;Ultimo Control activo: 
 04-03-2017 18:17:35 , Pila de llamadas
 04-03-2017 18:17:35 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
@@ -838,6 +921,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 04-03-2017 18:17:35 , Nº de Linea :        105
 04-03-2017 18:17:35 , En el Fuente: 		.FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * 			IIF(m.lnHeightRatio < m.lnWidthRatio, 			m.lnHeightRatio, m.lnWidthRatio) ) )
 04-03-2017 18:17:59 , REGFACVTA.INIT, Error: No hay ninguna tabla abierta en el área de trabajo actual.;Linea : .FONTSIZE = MAX( MIN_FONT_SIZE, INT( ._nOriginalFontsize * IIF(m.lnHeightRatio < m.lnWidthRatio, m.lnHeightRatio, m.lnWidthRatio) ) );Error : 
+
+
+
+
+
+
+
+
 
 
 
@@ -892,6 +983,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 
 
 
+
+
+
+
+
+
+
+
         52;Ultimo Alias Activo: CSRPARAMETROC;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092Q105TG.TMP;Ultimo Control activo: 
 04-03-2017 18:19:10 , Pila de llamadas
 04-03-2017 18:19:10 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
@@ -933,6 +1032,14 @@ Error :       1429;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ulti
 
 
 
+
+
+
+
+
+
+
+
 Y101LX.TMP;Ultimo Control activo: CODFAC
 22-12-2017 13:20:17 , Pila de llamadas
 22-12-2017 13:20:18 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
@@ -950,3 +1057,44 @@ Y101LX.TMP;Ultimo Control activo: CODFAC
 22-12-2017 13:20:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regfacvta.sct
 22-12-2017 13:20:19 , Nº de Linea :          5
 22-12-2017 13:20:19 , En el Fuente: IF CsrComprobante$'XH'
+17-08-2018 14:40:50 , MAIN, Error: El entorno de datos ya está descargado.;Linea : DO FORM configbd;Error :       1967;Ultimo Alias Activo: ;Ultimo registro:          0 ;DBF: ;Ultimo Control activo: 
+17-08-2018 14:40:50 , Pila de llamadas
+17-08-2018 14:40:50 , Programa    : j:\xsoftvfp\proyectos\comercio\progs\main.fxp
+17-08-2018 14:40:50 , Objeto      : main
+17-08-2018 14:40:50 , Base Objeto : j:\xsoftvfp\proyectos\comercio\progs\main.prg
+17-08-2018 14:40:50 , Nº de Linea :        179
+17-08-2018 14:40:50 , En el Fuente: 		DO FORM configbd
+17-08-2018 15:25:17 , REGCTACTE.INIT, Error: No se encuentra la propiedad LCCLASECOMPROBACREDITONTERNO.;Linea : this.lnidcomprobacreditointerno	= IIF(CsrComprobaInterno.clase$this.lcclasecomprobacreditonterno,CsrComprobaInterno.id,this.lnidcomprobacredit
+
+
+
+
+
+
+ointerno);Error :       1734;Ultimo Alias Activo: CSRCOMPROBAINTERNO;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092X50C5H.TMP;Ultimo Control activo: IDCOMPROBA
+17-08-2018 15:25:17 , Pila de llamadas
+17-08-2018 15:25:18 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:18 , Objeto      : regctacte.init
+17-08-2018 15:25:18 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:18 , Nº de Linea :         23
+17-08-2018 15:25:19 , En el Fuente:     .leercomprobante()
+17-08-2018 15:25:19 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:19 , Objeto      : regctacte.leercomprobante
+17-08-2018 15:25:19 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:20 , Nº de Linea :         42
+17-08-2018 15:25:20 , En el Fuente:    			this.lnidcomprobacreditointerno	= IIF(CsrComprobaInterno.clase$this.lcclasecomprobacreditonterno,CsrComprobaInterno.id,this.lnidcomprobacreditointerno)
+17-08-2018 15:25:51 , REGCTACTE.INIT, Error: No se encuentra la propiedad LCCLASECOMPROBACREDITONTERNO.;Linea : this.lnidcomprobacreditointerno	= IIF(CsrComprobaInterno.clase$this.lcclasecomprobacreditonterno,CsrComprobaInterno.id,this.lnidcomprobacredit
+
+
+ointerno);Error :       1734;Ultimo Alias Activo: CSRCOMPROBAINTERNO;Ultimo registro:          1 ;DBF: C:\USERS\ADMIN\APPDATA\LOCAL\TEMP\000092X50CF5.TMP;Ultimo Control activo: 
+17-08-2018 15:25:52 , Pila de llamadas
+17-08-2018 15:25:53 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:53 , Objeto      : regctacte.init
+17-08-2018 15:25:53 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:53 , Nº de Linea :         23
+17-08-2018 15:25:53 , En el Fuente:     .leercomprobante()
+17-08-2018 15:25:53 , Programa    : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:53 , Objeto      : regctacte.leercomprobante
+17-08-2018 15:25:53 , Base Objeto : j:\xsoftvfp\proyectos\comercio\forms\regctacte.sct
+17-08-2018 15:25:54 , Nº de Linea :         42
+17-08-2018 15:25:54 , En el Fuente:    			this.lnidcomprobacreditointerno	= IIF(CsrComprobaInterno.clase$this.lcclasecomprobacreditonterno,CsrComprobaInterno.id,this.lnidcomprobacreditointerno)
